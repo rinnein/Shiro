@@ -15,13 +15,12 @@
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
   "scripts": {
-    "build": "tsdown && cd ../../apps/web && tailwindcss -i src/styles/index.css -o ../../packages/types/dist/styles.css"
+    "build": "tsdown && cd ../../apps/web && node_modules/.bin/tailwindcss -i src/styles/index.css -o ../../packages/types/dist/styles.css"
   },
   "devDependencies": {
     "@types/node": "25.0.10",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "tailwindcss": "4.1.18",
     "tsdown": "0.14.0"
   }
 }
